@@ -16,14 +16,14 @@
         flex="dir:top main:justify cross:center box:justify">
         <div class="page-login--content-header">
           <p class="page-login--content-header-motto">
-            时间是一切财富中最宝贵的财富。 <span>—— 德奥弗拉斯多</span>
+            I can accept failure, but I can't acceptnot trying. <span>—— by Michael Jordan</span>
           </p>
         </div>
         <div
           class="page-login--content-main"
           flex="dir:top main:center cross:center">
           <!-- logo -->
-          <img class="page-login--logo" src="./image/logo@2x.png">
+          <img class="page-login--logo" src="./image/logo.png">
           <!-- 表单 -->
           <div class="page-login--form">
             <el-card shadow="never">
@@ -68,7 +68,7 @@
             <a href="#">条款</a>
           </p>
           <p class="page-login--content-footer-copyright">
-            Copyright <d2-icon name="copyright"/> 2018 D2 Projects 开源组织出品 <a href="https://github.com/FairyEver">@FairyEver</a>
+            Copyright <d2-icon name="copyright"/> 2019 www.qiufeihong.top出品 <a href="https://github.com/qiufeihong2018">@qiufeihong</a>
           </p>
         </div>
       </div>
@@ -193,7 +193,7 @@ export default {
   @extend %unable-select;
   $backgroundColor: #F0F2F5;
   // ---
-  background-color: $backgroundColor;
+  background-color: #000000;
   height: 100%;
   position: relative;
   // 层
@@ -220,10 +220,7 @@ export default {
   .page-login--content-header {
     padding: 1em 0;
     .page-login--content-header-motto {
-      margin: 0px;
-      padding: 0px;
       color: $color-text-normal;
-      text-align: center;
       font-size: 12px;
       span {
         color: $color-text-sub;
@@ -333,18 +330,18 @@ export default {
       list-style: none;
       width: 20px;
       height: 20px;
-      background: #FFF;
-      animation: animate 25s linear infinite;
+      background: #fff;
+      animation: mymove 5s linear infinite;
       bottom: -200px;
-      @keyframes animate {
+      @keyframes mymove {
         0%{
           transform: translateY(0) rotate(0deg);
-          opacity: 1;
-          border-radius: 0;
+          opacity: 0;
+          border-radius: 50%;
         }
         100%{
           transform: translateY(-1000px) rotate(720deg);
-          opacity: 0;
+          opacity: 1;
           border-radius: 50%;
         }
       }
