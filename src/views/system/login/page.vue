@@ -206,9 +206,9 @@ export default {
   }
   // 时间
   .page-login--layer-time {
-    font-size: 24em;
+    font-size: 35em;
     font-weight: bold;
-    color: rgba(0, 0, 0, 0.03);
+    color: #fff;
     overflow: hidden;
   }
   // 登陆页面控件的容器
